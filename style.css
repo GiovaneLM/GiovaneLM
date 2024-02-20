@@ -1,0 +1,88 @@
+/* Estilos gerais do corpo do documento */
+body {
+    /* Cor de fundo com transparência */
+    background-color: rgba(131, 177, 221, 0.555);
+    /* Imagem de fundo */
+    background-image: url(img/wallpaper-g.png);
+    /* Define o tamanho da imagem de fundo */
+    background-size: cover;
+    /* Define a posição da imagem de fundo */
+    background-position: top;
+    /* Impede a repetição da imagem de fundo */
+    background-repeat: no-repeat;
+    /* Fonte padrão */
+    font-family: Arial, Helvetica, sans-serif;
+    /* Preenche a altura do corpo até a altura total da viewport */
+    height: 100vh;
+}
+
+/* Estilos para um bloco genérico */
+.bloco {
+    /* Borda preta de 1px */
+    border: 1px solid black;
+    /* Espaçamento interno */
+    padding: 12px;
+}
+
+/* Estilos para títulos */
+h1 {
+    /* Negrito */
+    font-weight: bold;
+}
+
+/* Estilos específicos para elementos de vídeo */
+.video {
+    /* Define o alinhamento dos itens */
+    align-items: normal;
+}
+
+/* Estilos para parágrafos */
+p {
+    /* Alinha o texto justificado */
+    text-align: justify;
+    /* Sublinhado */
+    text-decoration: underline;
+}
+
+/* Esconde as listas dentro das divs por padrão */
+.lista > ul {
+    display: none;
+}
+
+/* Mostra a lista dentro da div quando a div é hoverada */
+.lista:hover > ul {
+    /* Mostra a lista */
+    display: block;
+    /* Cor do texto */
+    color: black;
+    /* Largura da lista */
+    width: 300px;
+}
+
+/* Estilos para links */
+a {
+    /* Cor do texto */
+    color: green;
+    /* Remove sublinhado */
+    text-decoration: none;
+    /* Texto em negrito */
+    font-weight: bold;
+}
+
+/* Estilos para links visitados */
+a:visited {
+    /* Cor do texto */
+    color: darkred;
+}
+
+/* Estilos para links ao passar o mouse */
+a:hover {
+    /* Cor do texto */
+    color: black;
+}
+
+/* Estilos para links ao clicar */
+a:active {
+    /* Cor do texto */
+    color: yellow;
+}
