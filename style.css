@@ -34,6 +34,7 @@ h1 {
 .video {
     /* Define o alinhamento dos itens */
     align-items: normal;
+    margin: auto;
 }
 
 /* Estilos para parágrafos */
