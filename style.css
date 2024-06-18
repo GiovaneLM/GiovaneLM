@@ -45,7 +45,7 @@ p {
     /* Alinha o texto justificado */
     text-align: justify;
     /* Sublinhado */
-    text-decoration: underline;
+    <!--text-decoration: underline;-->
 }
 
 /* Esconde as listas dentro das divs por padrão */
