@@ -1,7 +1,7 @@
 /* Estilos gerais do corpo do documento */
 body {
     /* Cor de fundo com transparência */
-    background-color: rgba(131, 177, 221, 0.9);
+    background-color: rgba(131, 177, 221, 0.25);
     /* Imagem de fundo */
     background-image: url(img/wallpaper-g.png);
     /* Define o tamanho da imagem de fundo */
