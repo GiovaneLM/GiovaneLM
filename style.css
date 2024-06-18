@@ -18,8 +18,6 @@ body {
 
 /* Estilos para um bloco genérico */
 .bloco {
-    /* Borda preta de 1px */
-    border: 1px solid black;
     /* Espaçamento interno */
     padding: 12px;
 }
