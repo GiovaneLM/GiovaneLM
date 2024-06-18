@@ -19,7 +19,7 @@ body {
 /* Estilos para um bloco genérico */
 .bloco {
     /* Espaçamento interno */
-    padding: 12px;
+    /*padding: 12px;*/
 }
 
 /* Estilos para títulos */
@@ -42,6 +42,8 @@ h1 {
 p {
     /* Alinha o texto justificado */
     text-align: justify;
+    /* Remove sublinhado */
+    text-decoration: none;
 }
 
 /* Esconde as listas dentro das divs por padrão */
