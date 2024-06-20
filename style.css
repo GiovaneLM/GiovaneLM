@@ -38,6 +38,10 @@ h1 {
     width: 100%;
     /* Margem inferior */
     margin-bottom: 10px;
+    /* Centraliza o conteúdo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Estilos específicos para elementos de vídeo */
