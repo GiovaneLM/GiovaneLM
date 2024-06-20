@@ -28,6 +28,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     max-width: 800px; /* Largura máxima */
+    max-height: 1000px;
 }
 
 /* Estilos para títulos */
