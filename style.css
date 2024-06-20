@@ -10,51 +10,68 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     /* Preenche a altura do corpo até a altura total da viewport */
     height: 100vh;
+    /* Centraliza o conteúdo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Estilos para um bloco genérico */
 .bloco {
     /* Espaçamento interno */
-    padding: 12px;
+    padding: 20px;
+    /* Fundo branco */
+    background-color: #fff;
+    /* Sombra */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Layout em linha */
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px; /* Largura máxima */
 }
 
 /* Estilos para títulos */
 h1 {
     /* Negrito */
     font-weight: bold;
+    /* Largura total */
+    width: 100%;
+    /* Margem inferior */
+    margin-bottom: 10px;
 }
 
 /* Estilos específicos para elementos de vídeo */
 .video {
-    /* Define o alinhamento dos itens */
-    align-items: normal;
-    margin-top: 10px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px;
+    /* Largura fixa */
+    width: 175px;
+    /* Altura fixa */
+    height: 315px;
+    /* Margem direita para espaçamento */
+    margin-right: 20px;
 }
 
 /* Estilos para parágrafos */
 p {
     /* Alinha o texto justificado */
     text-align: justify;
-    /* Remove sublinhado */
-    text-decoration: none;
+    /* Largura 50% */
+    width: 50%;
+    /* Margem inferior */
+    margin-bottom: 10px;
 }
 
-/* Esconde as listas dentro das divs por padrão */
-.lista > ul {
-    display: none;
+/* Estilos para a lista de redes sociais */
+.lista {
+    /* Largura 50% */
+    width: 50%;
 }
 
-/* Mostra a lista dentro da div quando a div é hoverada */
-.lista:hover > ul {
-    /* Mostra a lista */
-    display: block;
-    /* Cor do texto */
-    color: black;
-    /* Largura da lista */
-    width: 300px;
+/* Estilos para a lista de redes sociais */
+.lista ul {
+    /* Remove o padding */
+    padding: 0;
+    /* Remove a lista */
+    list-style-type: none;
 }
 
 /* Estilos para links */
