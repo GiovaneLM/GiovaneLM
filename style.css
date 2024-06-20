@@ -2,8 +2,8 @@
 body {
     /* Define um degradê com múltiplas cores */
     background: linear-gradient(135deg, 
-    rgba(255, 0, 0, 0.8) 0%, 
-    rgba(184, 209, 229, 0.8) 30%, 
+    rgba(131, 177, 221, 0.8) 0%, 
+    rgba(3, 188, 245, 0.8) 30%, 
     rgba(209, 222, 239, 0.8) 60%, 
     rgba(214, 224, 237, 0.8) 100%);
     /* Fonte padrão */
