@@ -64,14 +64,28 @@ p {
 .lista {
     /* Largura 50% */
     width: 50%;
+    /* Margem superior */
+    margin-top: 20px;
 }
 
 /* Estilos para a lista de redes sociais */
-.lista ul {
+.lista > ul {
     /* Remove o padding */
     padding: 0;
     /* Remove a lista */
     list-style-type: none;
+    /* Esconde a lista por padrão */
+    display: none;
+}
+
+/* Mostra a lista dentro da div quando a div é hoverada */
+.lista:hover > ul {
+    /* Mostra a lista */
+    display: block;
+    /* Cor do texto */
+    color: black;
+    /* Largura da lista */
+    width: 300px;
 }
 
 /* Estilos para links */
