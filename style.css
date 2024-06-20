@@ -91,7 +91,7 @@ p {
 /* Estilos para links */
 a {
     /* Cor do texto */
-    color: green;
+    color: black;
     /* Remove sublinhado */
     text-decoration: none;
     /* Texto em negrito */
@@ -101,17 +101,17 @@ a {
 /* Estilos para links visitados */
 a:visited {
     /* Cor do texto */
-    color: darkred;
+    color: gray;
 }
 
 /* Estilos para links ao passar o mouse */
 a:hover {
     /* Cor do texto */
-    color: black;
+    color: red;
 }
 
 /* Estilos para links ao clicar */
 a:active {
     /* Cor do texto */
-    color: yellow;
+    color: lightcoral;
 }
