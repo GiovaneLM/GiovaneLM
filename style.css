@@ -1,53 +1,85 @@
 /* Estilos gerais do corpo do documento */
 body {
-    /* Cor de fundo com transparência */
-    background-color: rgba(131, 177, 221, 0.25);
-    /* Imagem de fundo */
-    background-image: url(img/wallpaper-g.png);
-    /* Define o tamanho da imagem de fundo */
-    background-size: cover;
-    /* Define a posição da imagem de fundo */
-    background-position: top;
-    /* Impede a repetição da imagem de fundo */
-    background-repeat: no-repeat;
+    /* Define um degradê com múltiplas cores */
+    background: linear-gradient(135deg, 
+    rgba(131, 177, 221, 0.8) 0%, 
+    rgba(184, 209, 229, 0.8) 30%, 
+    rgba(209, 222, 239, 0.8) 60%, 
+    rgba(214, 224, 237, 0.8) 100%);
     /* Fonte padrão */
     font-family: Arial, Helvetica, sans-serif;
     /* Preenche a altura do corpo até a altura total da viewport */
     height: 100vh;
+    /* Centraliza o conteúdo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Estilos para um bloco genérico */
 .bloco {
     /* Espaçamento interno */
-    /*padding: 12px;*/
+    padding: 20px;
+    /* Fundo branco */
+    background-color: #fff;
+    /* Sombra */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Layout em linha */
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px; /* Largura máxima */
+    max-height: 1000px;
 }
 
 /* Estilos para títulos */
 h1 {
     /* Negrito */
     font-weight: bold;
+    /* Largura total */
+    width: 100%;
+    /* Margem inferior */
+    margin-bottom: 10px;
+    /* Centraliza o conteúdo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Estilos específicos para elementos de vídeo */
 .video {
-    /* Define o alinhamento dos itens */
-    align-items: normal;
-    margin-top: 10px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px;
+    /* Largura fixa */
+    width: 175px;
+    /* Altura fixa */
+    height: 315px;
+    /* Margem direita para espaçamento */
+    margin-right: 20px;
 }
 
 /* Estilos para parágrafos */
 p {
     /* Alinha o texto justificado */
     text-align: justify;
-    /* Remove sublinhado */
-    text-decoration: none;
+    /* Largura 50% */
+    width: 50%;
+    /* Margem inferior */
+    margin-bottom: 10px;
 }
 
-/* Esconde as listas dentro das divs por padrão */
+/* Estilos para a lista de redes sociais */
+.lista {
+    /* Largura 50% */
+    width: 50%;
+    /* Margem superior */
+    margin-top: 20px;
+}
+
+/* Estilos para a lista de redes sociais */
 .lista > ul {
+    /* Remove o padding */
+    padding: 0;
+    /* Remove a lista */
+    list-style-type: none;
+    /* Esconde a lista por padrão */
     display: none;
 }
 
@@ -64,7 +96,7 @@ p {
 /* Estilos para links */
 a {
     /* Cor do texto */
-    color: green;
+    color: black;
     /* Remove sublinhado */
     text-decoration: none;
     /* Texto em negrito */
@@ -74,17 +106,17 @@ a {
 /* Estilos para links visitados */
 a:visited {
     /* Cor do texto */
-    color: darkred;
+    color: gray;
 }
 
 /* Estilos para links ao passar o mouse */
 a:hover {
     /* Cor do texto */
-    color: black;
+    color: red;
 }
 
 /* Estilos para links ao clicar */
 a:active {
     /* Cor do texto */
-    color: yellow;
+    color: lightcoral;
 }
