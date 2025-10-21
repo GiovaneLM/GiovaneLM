@@ -88,10 +88,10 @@ p {
 }
 
 /* Mostra a lista dentro da div quando a div é hoverada */
-.lista:hover > ul {
+/*.lista:hover > ul {*/
     /* Mostra a lista */
    /* display: block;*/
-}
+/*}*/
 
 /* Estilos para links */
 a {
@@ -121,3 +121,4 @@ a:active {
     color: lightcoral;
 
 }
+
