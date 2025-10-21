@@ -34,8 +34,8 @@ h1 {
 
 /* Estilos específicos para elementos de vídeo */ 
 .video { 
-    /*width: 175px; 
-    height: 315px; */
+    width: 175px; 
+    height: 315px; 
     margin-right: 20px; 
 } 
 
@@ -81,3 +81,4 @@ a:hover {
 a:active { 
     color: lightcoral; 
 }
+
