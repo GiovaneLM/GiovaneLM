@@ -67,7 +67,7 @@ p {
     /* Remove a lista */ 
     list-style-type: none;
     /* Esconde a lista por padrão */
-    /*display: none;*/
+    display: none;
     /* Cor do texto */ 
     color: black; 
     /* Largura da lista */ 
@@ -76,7 +76,7 @@ p {
 /* Mostra a lista dentro da div quando a div é hoverada */
 .lista:hover > ul {
     /* Mostra a lista */ 
-    display: block;*/ }
+    display: block; }
 
 /* Estilos para links */
 a {
@@ -96,7 +96,9 @@ a:visited {
 a:hover {
     /* Cor do texto */
     color: red; } 
+
 /* Estilos para links ao clicar */ 
 a:active { 
     /* Cor do texto 
     */ color: lightcoral; }
+
