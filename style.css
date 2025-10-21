@@ -81,16 +81,16 @@ p {
     list-style-type: none;
     /* Esconde a lista por padrão */
     display: none;
+    /* Cor do texto */
+    color: black;
+    /* Largura da lista */
+    width: 300px;
 }
 
 /* Mostra a lista dentro da div quando a div é hoverada */
 .lista:hover > ul {
     /* Mostra a lista */
-    display: block;
-    /* Cor do texto */
-    color: black;
-    /* Largura da lista */
-    width: 300px;
+   /* display: block;*/
 }
 
 /* Estilos para links */
@@ -119,4 +119,5 @@ a:hover {
 a:active {
     /* Cor do texto */
     color: lightcoral;
+
 }
