@@ -1,84 +1,141 @@
-/* Estilos gerais do corpo do documento */ 
-body { 
-    background: linear-gradient(135deg, rgba(131, 177, 221, 0.8) 0%, 
-                                rgba(184, 209, 229, 0.8) 30%, 
-                                rgba(209, 222, 239, 0.8) 60%, 
-                                rgba(214, 224, 237, 0.8) 100%); 
-    font-family: Arial, Helvetica, sans-serif; 
-    height: 100vh; 
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-} 
-
-/* Estilos para um bloco genérico */ 
-.bloco { 
-    padding: 20px; 
-    background-color: #fff; 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
-    display: flex; 
-    flex-wrap: wrap; 
-    max-width: 800px; 
-    max-height: 1000px; 
-} 
-
-/* Estilos para títulos */ 
-h1 { 
-    font-weight: bold; 
-    width: 100%;
-    margin-bottom: 10px;
-    display: flex; 
+/* Estilos gerais do corpo do documento */
+body {
+    background: linear-gradient(135deg, 
+        rgba(131, 177, 221, 0.8) 0%, 
+        rgba(184, 209, 229, 0.8) 30%, 
+        rgba(209, 222, 239, 0.8) 60%, 
+        rgba(214, 224, 237, 0.8) 100%);
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    display: flex;
     justify-content: center;
-    align-items: center; 
-} 
+    align-items: center;
+    padding: 20px;
+}
 
-/* Estilos específicos para elementos de vídeo */ 
-.video { 
-    width: 175px; 
-    height: 315px; 
-    margin-right: 20px; 
-} 
+/* Bloco principal */
+.bloco {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 900px;
+    border-radius: 10px;
+}
 
-/* Estilos para parágrafos */ 
-p { 
-    text-align: justify; 
-    width: 50%; 
-    margin-bottom: 10px; 
-} 
+/* Títulos */
+h1, h2 {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
 
-/* Estilos para a lista de redes sociais */ 
-.lista { 
-    width: 50%; 
-    margin-top: 20px; 
-} 
+h1 {
+    font-size: 2rem;
+    color: #333;
+}
 
-/* Lista de redes sociais sempre visível */
-.lista > ul {
+h2 {
+    font-size: 1.5rem;
+    color: #555;
+}
+
+/* Conteúdo principal (vídeo + textos) */
+.conteudo-principal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Vídeo */
+.video {
+    width: 100%;
+    max-width: 300px;
+    height: 315px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    flex-shrink: 0;
+}
+
+/* Textos */
+.textos {
+    flex: 1;
+    min-width: 300px;
+    margin-left: 20px;
+}
+
+.textos p {
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+/* Lista de redes sociais */
+.lista {
+    width: 100%;
+}
+
+.lista ul {
     padding: 0;
     list-style-type: none;
-    color: black; 
-    width: 300px; 
+    color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-/* Estilos para links */
-a {
+.lista li a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
     color: black;
     text-decoration: none;
-    font-weight: bold; 
+    padding: 5px 10px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
 }
 
-/* Estilos para links visitados */
-a:visited { 
-    color: gray; 
+.lista li a:hover {
+    background-color: #e0e0e0;
+    color: #ff4757;
 }
 
-/* Estilos para links ao passar o mouse */
-a:hover {
-    color: red; 
-} 
-
-/* Estilos para links ao clicar */ 
-a:active { 
-    color: lightcoral; 
+.lista img {
+    width: 24px;
+    height: 24px;
 }
 
+/* Links gerais */
+a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:visited {
+    color: gray;
+}
+
+a:active {
+    color: lightcoral;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .conteudo-principal {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .textos {
+        margin-left: 0;
+    }
+
+    .video {
+        max-width: 100%;
+    }
+}
