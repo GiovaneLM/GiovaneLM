@@ -1,51 +1,366 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Site pessoal de GiovaneLM — desenvolvedor, gamer e criador de conteúdo.">
+
+    <title>GiovaneLM | Desenvolvedor & Criador</title>
+
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="img/icone-do-site.ico" type="image/x-icon">
-    <title>GiovaneLM</title>
 </head>
+
 <body>
-    <main class="bloco">
-        <!-- Título principal -->
-        <h1>MINHAS REDES SOCIAIS</h1>
 
-        <!-- Conteúdo principal: vídeo + textos -->
-        <div class="conteudo-principal">
-            <!-- Vídeo incorporado -->
-            <iframe class="video" 
-                src="https://www.youtube.com/embed/hu2MjHm6jXs?si=Dc_ZrpiFD6-FYP_6" 
-                title="YouTube video player" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                allowfullscreen>
-            </iframe>
+    <div class="site">
 
-            <!-- Textos sobre você -->
-            <div class="textos">
-                <h2>Quem sou eu?</h2>
-                <p>BORA LÁ, SEUS GOXTIOSOS! Como estão todos nesse magnífico dia?^^ E aí, galerinha! Aqui é o Giovane L. Martins, e aos 25 anos, estou pronto para compartilhar muita energia positiva e momentos incríveis com vocês! Meu principal objetivo é criar um espaço acolhedor, onde todos se sintam seguros e felizes para conversarmos sobre qualquer coisa.</p>
-                <p>Quero que este seja um lugar tranquilo e caloroso, onde possamos trocar ideias, desabafar e nos apoiar mutuamente. Não importa o assunto, estou aqui para ouvir e contribuir da melhor maneira possível.</p>
-                <p>E lembrem-se, se apenas uma pessoa sorrir com o meu conteúdo, tudo terá valido a pena. Cada sorriso é uma vitória, e cada um de vocês é importante para mim.</p>
-                <p>Estou ansioso para compartilhar momentos memoráveis com vocês. Vamos juntos espalhar sorrisos, compartilhar histórias e criar laços que durarão para sempre.</p>
-                <p>Vamos fazer deste momento o início de uma jornada inesquecível!</p>
+        <!-- =========================================================
+            SIDEBAR / PERFIL
+        ========================================================== -->
+        <aside class="sidebar">
+
+            <div class="perfil">
+
+                <!-- Troque "img/foto.jpg" pela sua foto -->
+                <div class="foto-container">
+                    <img src="img/foto.jpg" alt="Foto de GiovaneLM">
+                </div>
+
+                <h1>GiovaneLM</h1>
+
+                <p class="cargo">
+                    Desenvolvedor <span>•</span> Gamer <span>•</span> Criador
+                </p>
+
+                <p class="frase">
+                    Construindo projetos, jogando games e compartilhando minha jornada.
+                </p>
+
             </div>
-        </div>
 
-        <!-- Lista de redes sociais -->
-        <div class="lista">
-            <h2>Como falar comigo?(passe o mouse aqui)</h2>
-            <ul>
-                <li><a href="https://www.youtube.com/channel/UC4Vwquf8nabHNI4i2FdVZQw" target="_blank"><img src="img/icone-youtube.png" alt="Ícone YouTube">GiovaneLM-Videos</a></li>
-                <li><a href="https://www.youtube.com/channel/UC6CEvkYOqn-pqzPKjY-lDpA" target="_blank"><img src="img/icone-youtube.png" alt="Ícone YouTube">GiovaneLM-Lives</a></li>
-                <li><a href="https://www.twitch.tv/giovanelm" target="_blank"><img src="img/icone-twitch.png" alt="Ícone Twitch">giovanelm</a></li>
-                <li><a href="https://www.instagram.com/giovanel.martins/" target="_blank"><img src="img/icone-instagram.png" alt="Ícone Instagram">giovanel.martins</a></li>
-                <li><a href="https://www.instagram.com/gamersloucosinventam/" target="_blank"><img src="img/icone-instagram.png" alt="Ícone Instagram">gamersloucosinventam</a></li>
-            </ul>
-        </div>
-    </main>
+            <div class="linha"></div>
+
+            <!-- Redes sociais -->
+            <nav class="redes" aria-label="Redes sociais">
+
+                <h2>Minhas redes</h2>
+
+                <a href="https://www.youtube.com/channel/UC4Vwquf8nabHNI4i2FdVZQw"
+                   target="_blank" rel="noopener noreferrer">
+                    <span class="icone">▶</span>
+                    <span>YouTube</span>
+                </a>
+
+                <a href="https://www.youtube.com/channel/UC6CEvkYOqn-pqzPKjY-lDpA"
+                   target="_blank" rel="noopener noreferrer">
+                    <span class="icone">▶</span>
+                    <span>YouTube • Lives</span>
+                </a>
+
+                <a href="https://www.twitch.tv/giovanelm"
+                   target="_blank" rel="noopener noreferrer">
+                    <span class="icone">◈</span>
+                    <span>Twitch</span>
+                </a>
+
+                <a href="https://www.instagram.com/giovanel.martins/"
+                   target="_blank" rel="noopener noreferrer">
+                    <span class="icone">◎</span>
+                    <span>Instagram</span>
+                </a>
+
+                <a href="https://github.com/GiovaneLM"
+                   target="_blank" rel="noopener noreferrer">
+                    <span class="icone">⌘</span>
+                    <span>GitHub</span>
+                </a>
+
+                <a href="#contato">
+                    <span class="icone">✉</span>
+                    <span>Contato</span>
+                </a>
+
+            </nav>
+
+            <div class="linha"></div>
+
+            <div class="sidebar-footer">
+                <p>© 2026 GiovaneLM</p>
+                <p>Feito com HTML & CSS</p>
+            </div>
+
+        </aside>
+
+
+        <!-- =========================================================
+             CONTEÚDO PRINCIPAL
+        ========================================================== -->
+        <main class="conteudo">
+
+            <!-- Hero -->
+            <section class="hero">
+
+                <div class="hero-texto">
+
+                    <span class="tag">BEM-VINDO AO MEU SITE</span>
+
+                    <h2>
+                        Olá, eu sou o
+                        <strong>Giovane.</strong>
+                    </h2>
+
+                    <p>
+                        Desenvolvedor em formação, gamer e criador de conteúdo.
+                        Aqui você encontra meus projetos, redes sociais,
+                        vídeos e um pouco da minha história.
+                    </p>
+
+                    <div class="hero-botoes">
+                        <a href="#sobre" class="botao principal">
+                            Conheça minha história
+                        </a>
+
+                        <a href="#projetos" class="botao secundario">
+                            Ver projetos
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="hero-detalhe">
+                    <span>&lt;/&gt;</span>
+                </div>
+
+            </section>
+
+
+            <!-- =====================================================
+                 VÍDEO
+            ====================================================== -->
+            <section class="card video-card">
+
+                <div class="card-cabecalho">
+                    <div>
+                        <span class="tag">DESTAQUE</span>
+                        <h2>Meu conteúdo</h2>
+                    </div>
+
+                    <span class="numero">01</span>
+                </div>
+
+                <div class="video-wrapper">
+                    <iframe
+                        src="https://www.youtube.com/embed/hu2MjHm6jXs?si=Dc_ZrpiFD6-FYP_6"
+                        title="Vídeo do GiovaneLM no YouTube"
+                        loading="lazy"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+
+            </section>
+
+
+            <!-- =====================================================
+                 SOBRE MIM
+            ====================================================== -->
+            <section class="card" id="sobre">
+
+                <div class="card-cabecalho">
+                    <div>
+                        <span class="tag">SOBRE MIM</span>
+                        <h2>Quem sou eu?</h2>
+                    </div>
+
+                    <span class="numero">02</span>
+                </div>
+
+                <div class="sobre-grid">
+
+                    <div class="sobre-texto">
+
+                        <p class="destaque">
+                            Olá! Eu sou Giovane L. Martins, e este é o meu espaço na internet.
+                        </p>
+
+                        <p>
+                            Sou apaixonado por tecnologia, programação, games, animes, mangás, filmes, séries e RPGs. Atualmente, estou construindo minha trajetória como desenvolvedor de software e, ao mesmo tempo, compartilhando com a comunidade os conteúdos e experiências que fazem parte dos meus interesses.
+                        </p>
+
+                        <p>
+                            Meu objetivo é criar um espaço leve, acolhedor e aberto para todos, onde possamos conversar, jogar, trocar ideias e compartilhar bons momentos.
+                        </p>
+
+                        <p>
+                            Acredito que o conteúdo tem valor quando consegue gerar uma experiência positiva para alguém. Se o que eu produzo conseguir fazer uma pessoa sorrir, aprender algo novo ou simplesmente passar um bom momento, todo esse trabalho já terá valido a pena.
+                        </p>
+
+
+                    </div>
+
+                    <div class="informacoes">
+
+                        <div class="info">
+                            <span>🎮</span>
+                            <div>
+                                <strong>Games</strong>
+                                <small>Jogador apaixonado</small>
+                            </div>
+                        </div>
+
+                        <div class="info">
+                            <span>💻</span>
+                            <div>
+                                <strong>Programação</strong>
+                                <small>Desenvolvimento de software</small>
+                            </div>
+                        </div>
+
+                        <div class="info">
+                            <span>📺</span>
+                            <div>
+                                <strong>Conteúdo</strong>
+                                <small>YouTube & Twitch</small>
+                            </div>
+                        </div>
+
+                        <div class="info">
+                            <span>🇧🇷</span>
+                            <div>
+                                <strong>Brasil</strong>
+                                <small>Minha base</small>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =====================================================
+                 PROJETOS
+            ====================================================== -->
+            <section class="card" id="projetos">
+
+                <div class="card-cabecalho">
+                    <div>
+                        <span class="tag">PORTFÓLIO</span>
+                        <h2>Meus projetos</h2>
+                    </div>
+
+                    <span class="numero">03</span>
+                </div>
+
+                <div class="projetos">
+
+                    <article class="projeto">
+                        <div class="projeto-icone">🌐</div>
+
+                        <h3>Site GiovaneLM</h3>
+
+                        <p>
+                            Meu site pessoal desenvolvido para reunir
+                            conteúdo, redes sociais e projetos.
+                        </p>
+
+                        <a href="#" class="projeto-link">
+                            Projeto atual →
+                        </a>
+                    </article>
+
+
+                    <article class="projeto">
+                        <div class="projeto-icone">🐍</div>
+
+                        <h3>Projetos Python</h3>
+
+                        <p>
+                            Exercícios e aplicações desenvolvidas durante
+                            minha evolução na programação.
+                        </p>
+
+                        <a href="https://github.com/GiovaneLM"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="projeto-link">
+                            Ver no GitHub →
+                        </a>
+                    </article>
+
+
+                    <article class="projeto">
+                        <div class="projeto-icone">💡</div>
+
+                        <h3>Próximo projeto</h3>
+
+                        <p>
+                            Este espaço será atualizado conforme novos
+                            projetos forem entrando no meu portfólio.
+                        </p>
+
+                        <a href="https://github.com/GiovaneLM"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="projeto-link">
+                            Acompanhar →
+                        </a>
+                    </article>
+
+                </div>
+
+            </section>
+
+
+            <!-- =====================================================
+                 REDES / CTA
+            ====================================================== -->
+            <section class="cta" id="contato">
+
+                <div>
+                    <span class="tag">VAMOS CONVERSAR?</span>
+
+                    <h2>
+                        Quer acompanhar minha jornada?
+                    </h2>
+
+                    <p>
+                        Me encontre nas redes e venha fazer parte da comunidade.
+                    </p>
+                </div>
+
+                <div class="cta-botoes">
+
+                    <a href="https://www.twitch.tv/giovanelm"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="botao principal">
+                        Twitch
+                    </a>
+
+                    <a href="https://www.youtube.com/channel/UC4Vwquf8nabHNI4i2FdVZQw"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="botao secundario">
+                        YouTube
+                    </a>
+
+                </div>
+
+            </section>
+
+
+            <footer>
+                <p>
+                    GiovaneLM © 2026 — Desenvolvido com HTML & CSS.
+                </p>
+            </footer>
+
+        </main>
+
+    </div>
+
 </body>
 </html>
-
